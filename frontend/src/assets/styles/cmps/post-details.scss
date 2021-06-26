@@ -1,0 +1,232 @@
+.post-card {
+  /*    background-color: #efefef;
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  background: rgba(var(--d87, 255, 255, 255), 1);
+  display: block;
+  */
+
+  margin-left: auto;
+  margin-right: auto;
+  /*   height: 600px;
+  width: 914px; */
+
+  .fropic {
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .header-level {
+    display: flex;
+    align-items: center;
+  }
+  .main-layout {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-url {
+    border-radius: 50%;
+    height: 40px;
+    margin: 10px;
+  }
+  .username {
+    align-items: center;
+    font-family: "Lato", sans-serif;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .my-username {
+    align-items: center;
+    font-family: "Lato", sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+  }
+  .caption {
+    font-family: "Montserrat", sans-serif;
+  }
+  .caption-card {
+    border-bottom: 1px solid rgba(var(--ce3, 239, 239, 239), 1);
+    min-height: 100px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    max-height: 350px;
+    min-height: 350px;
+  }
+
+  .caption-card::-webkit-scrollbar {
+    display: none;
+  }
+
+  .header-card {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(var(--ce3, 239, 239, 239), 1);
+  }
+
+  .post-modal-right {
+    flex: 1;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    width: 482px;
+    /*  display: block; */
+    width: 100%;
+  }
+
+  .post-modal {
+    width: 96%;
+    max-width: 935px;
+    margin: 0 auto;
+    background: #fff;
+    height: 600px;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .post-card-img-url {
+    width: 67%;
+    height: inherit;
+    -o-object-fit: cover;
+    object-fit: cover;
+    display: block;
+    margin-left: 0%;
+  }
+}
+
+.likes-card {
+  margin: 0;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.card-save {
+  margin-left: 124px;
+}
+
+.card-comment {
+  border-top: 1px solid #6e6d6d;
+  padding-left: 10px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 5px;
+  border-top: 1px solid rgba(var(--ce3, 239, 239, 239), 1);
+  padding-bottom: 5px;
+
+  .commentin {
+    border-color: transparent;
+    background-color: transparent;
+    width: 200px;
+  }
+  .Post {
+    border-color: transparent;
+    background-color: transparent;
+    color: #0095f6;
+    width: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+}
+
+.Post:disabled,
+.Post[disabled] {
+  color: #aeddfc;
+}
+
+.post-actions {
+  padding-left: 20px;
+}
+
+.created-at {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.dots {
+  margin-left: auto;
+  margin-right: 2%;
+  cursor: pointer;
+}
+.himage {
+  cursor: pointer;
+}
+
+.loc {
+  color: rgba(var(--i1d, 38, 38, 38), 1);
+  font-size: 13px;
+  font-family: "Lato", sans-serif;
+}
+
+.post-save {
+  margin-right: 10px;
+}
+
+.comment-txt {
+  font-family: "Montserrat", sans-serif;
+}
+
+.loading{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:10%;
+}
+
+@media only screen and (max-width: 600px) {
+  .post-card {
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    /*  height: 600px;
+    width: 914px; */
+
+    .post-modal {
+      width: 96%;
+      max-width: 935px;
+      margin: 0 auto;
+      background: #fff;
+      height: 498px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: table-cell;
+      overflow: hidden;
+    }
+
+    .post-card-img-url {
+      height: 300px;
+      width: 373px;
+    }
+
+    .caption-card {
+      border-bottom: 1px solid rgba(var(--ce3, 239, 239, 239), 1);
+      min-height: 100px;
+      overflow-y: scroll;
+      scroll-behavior: smooth;
+      max-height: 100px;
+      min-height: 100px;
+    }
+  }
+  .dots {
+    margin-left: auto;
+    margin-right: 6%;
+    cursor: pointer;
+  }
+
+  .card-save {
+    margin-left: 190px;
+}
+
+}

@@ -1,0 +1,25 @@
+.card-img{
+    .img-tag {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: GreatVibes, serif;
+        margin: 0%;
+        font-size: 0px;
+        padding: 0%;
+         cursor: pointer;        
+    }
+ 
+    .images{
+        width: 100%;
+    }
+    
+  
+}
+.card-img:hover {
+     opacity: 0.6;
+      }
+
+
+
+      

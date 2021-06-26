@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+
+header {
+    background: rgba(var(--d87, 255, 255, 255), 1);
+    justify-content: flex-end;
+    border-bottom: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+    height: 60px;
+    margin-top: 0%;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 79px;
+    width: 100%;
+    z-index: 2;
+
+
+    .header-icon{
+        flex-direction: row;
+        padding-left: 24px;
+        white-space: nowrap;
+        
+    }
+  
+
+    .loggedin-user {
+        background-color: $clr1;
+        padding: 2px 8px;
+        border-radius: 1em;
+        align-self: flex-end;
+        color: whitesmoke;
+        span {
+            background-color: $clr2;
+            padding: 4px;
+            margin: 10px;
+            border-radius: 50%;
+        }
+    }
+
+    .logo {
+        font-size: 30px;
+        font-family: "Satisfy", cursive;
+        font-weight: 100;
+        color: rgb(22, 22, 23);
+        justify-content: flex-start;
+        text-decoration: none;
+    }
+
+    .icon {
+        height: 25px;
+        width: 25px;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+    .icons {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        margin-left: 20px;
+    }
+
+    .search {
+        width: 215px;
+        height: 28px;
+        background: rgba(var(--b3f, 250, 250, 250), 1);
+        border: solid 1px rgba(var(--b6a, 219, 219, 219), 1);
+        justify-content: center;
+        border-radius: 3px;
+        padding: 7px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        width: 100%;
+        height: 80px;
+        justify-content: space-between;
+        padding: 10px;
+        .logo {
+            font-size: 20px;
+            font-family: "Satisfy", cursive;
+            font-weight: 100;
+            color: rgb(22, 22, 23);
+            justify-content: flex-start;
+            margin-left: 1%;
+            margin-right: 0%;
+        }
+    }
+    .search {
+        display: none;
+    }
+
+    .header-icon{
+        flex-direction: row;
+        padding-left: 24px;
+        white-space: nowrap;
+        justify-content: center;
+    }
+
+}

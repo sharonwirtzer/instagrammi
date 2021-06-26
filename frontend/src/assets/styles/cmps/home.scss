@@ -1,0 +1,155 @@
+.level-left {
+  border: 1px solid #9a9a9a;
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  width: 614px;
+  margin-top: 100px;
+  background: rgba(var(--d87, 255, 255, 255), 1);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 4px;
+
+  .fropic {
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .header-level {
+    display: flex;
+    align-items: center;
+  }
+  .main-layout {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-url {
+    border-radius: 50%;
+    height: 40px;
+    margin: 10px;
+  }
+  .username {
+    align-items: center;
+    font-family: "Lato", sans-serif;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .my-username {
+    align-items: center;
+    font-family: "Lato", sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+  }
+  .caption {
+    font-family: "Montserrat", sans-serif;
+  }
+}
+.likes {
+  margin-left: 10px;
+}
+
+.comment {
+  border-top: 1px solid rgb(110, 109, 109);
+  padding-left: 10px;
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  padding-top: 5px;
+  border-top: 1px solid rgba(var(--ce3, 239, 239, 239), 1);
+  padding-bottom: 5px;
+
+  .commentin {
+    border-color: transparent;
+    background-color: transparent;
+    width: 900px;
+    margin-left: 50px;
+  }
+  .Post {
+    border-color: transparent;
+    background-color: transparent;
+    color: #0095f6;
+    width: 50px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    margin-left: auto;
+    margin-right: 10px;
+  }
+}
+
+.Post:disabled,
+.Post[disabled] {
+  color: #aeddfc;
+}
+
+.post-actions {
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.created-at {
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.dots {
+  margin-left: auto;
+  margin-right: 2%;
+  cursor: pointer;
+}
+.himage {
+  cursor: pointer;
+}
+
+.loc {
+  color: rgba(var(--i1d, 38, 38, 38), 1);
+  font-size: 13px;
+  font-family: "Lato", sans-serif;
+}
+.post-img-url {
+  height: 612px;
+  width: 612px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.post-save {
+  margin-left: 71%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.comment-txt{
+  font-family: "Montserrat", sans-serif;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .level-left {
+    border: 1px transparent;
+    width: 100%;
+  }
+  .post-img-url {
+    width: 100%;
+    height: inherit;
+    object-fit: cover;
+  }
+  
+
+  .post-save{
+    margin-left: 190px;
+  }
+
+  .go-to-home {
+    margin-left: 130px;
+}
+
+
+}
+
