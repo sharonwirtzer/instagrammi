@@ -4,6 +4,8 @@ const socketService = require('../../services/socket.service')
 
 const USERS_KEY = 'users'
 
+
+
 async function getById(userId) {
     try {
         const collection = await dbService.getCollection(USERS_KEY)
@@ -15,15 +17,8 @@ async function getById(userId) {
     }
 }
 
-
-
-
-
 module.exports = {
-
     getById,
-    
-
 }
 
 

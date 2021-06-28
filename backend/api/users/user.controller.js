@@ -2,9 +2,9 @@
 const usersService = require('./user.service')
 
 
-async function getById(req, res){
+async function getById(req, res) {
     try {
-        const {userId}= req.params
+        const { userId } = req.params
         const user = await usersService.getById(userId)
         res.json(user)
     } catch (err) {
@@ -15,10 +15,6 @@ async function getById(req, res){
 }
 
 
-
-
-
 module.exports = {
     getById,
-    
 }
