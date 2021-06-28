@@ -125,10 +125,9 @@
   cursor: pointer;
 }
 
-.comment-txt{
+.comment-txt {
   font-family: "Montserrat", sans-serif;
 }
-
 
 @media only screen and (max-width: 600px) {
   .level-left {
@@ -140,16 +139,12 @@
     height: inherit;
     object-fit: cover;
   }
-  
 
-  .post-save{
+  .post-save {
     margin-left: 190px;
   }
 
   .go-to-home {
     margin-left: 130px;
+  }
 }
-
-
-}
-

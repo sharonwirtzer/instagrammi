@@ -147,9 +147,6 @@ export default {
       });
     },
     async deletepost() {
-      /*    const post = this.post;
-      const updatedPost = await postService.remove(post);
-      this.posts.splice(post); */
       const post = this.post;
       const updatedPost = await postService.remove(post);
     },

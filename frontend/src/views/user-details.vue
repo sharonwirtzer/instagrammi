@@ -8,9 +8,17 @@
 
         <div>
           <ul class="profile-stats">
-            <li><span class="profile-name">{{user.postid.length}}</span> posts</li>
-            <li><span class="profile-name">{{user.followers.length}}</span> followers</li>
-            <li><span class="profile-name">{{user.following.length}}</span> following</li>
+            <li>
+              <span class="profile-name">{{ user.postid.length }}</span> posts
+            </li>
+            <li>
+              <span class="profile-name">{{ user.followers.length }}</span>
+              followers
+            </li>
+            <li>
+              <span class="profile-name">{{ user.following.length }}</span>
+              following
+            </li>
           </ul>
         </div>
 
@@ -20,15 +28,17 @@
         </div>
       </div>
     </div>
-     <div class="loading" v-if="loading"><img :src="require('@/assets/img/loading.gif')">  </div>
-<img src="">
-    <div v-if="!showAddPostModal"  class="posts"> 
+    <div class="loading" v-if="loading">
+      <img :src="require('@/assets/img/loading.gif')" />
+    </div>
+    <!-- <img src="" /> -->
+    <div v-if="!showAddPostModal" class="posts">
       <my-profile-post
         @click.native="
           visible = !visible;
           postToEdit = post;
         "
-        v-for="post in userPosts"
+        v-for="post in orderedPosts"
         :post="post"
         :key="post"
       />
@@ -47,7 +57,7 @@
           />
         </div>
       </i>
-    </div> 
+    </div>
 
     <div class="screen" v-if="showAddPostModal">
       <div class="new-post1">
@@ -131,22 +141,21 @@ export default {
     async uploadImage(evt) {
       const files = evt.target.files;
       if (!files.length) return;
-this.loading= true;
+      this.loading = true;
       const res = await uploadImg(evt);
       console.log("onUploadImg -> res", res);
 
       this.image = res.url;
       this.showAddPostModal = true;
-       this.loading= false;
-      
+      this.loading = false;
     },
 
     async sharePost() {
       const post = {
         byUser: {
-          _id: this.user._id ,
-          imgUrl:this.user.imgUrl,
-          username: this.user.username ,
+          _id: this.user._id,
+          imgUrl: this.user.imgUrl,
+          username: this.user.username,
         },
         postImgUrl: this.image,
         likes: 0,
@@ -157,8 +166,8 @@ this.loading= true;
       };
       const updatedPost = await postService.add(post);
       this.posts.unshift(post);
-      this.loading= false;
       this.goToHome();
+      this.loading = false;
     },
 
     goToHome() {
@@ -177,24 +186,22 @@ this.loading= true;
     profileBody,
   },
   computed: {
-    userPosts() {
-       return this.posts;
-    },
+    orderedPosts(){
+      return this.posts.sort((a, b)=> -(a.createdAt - b.createdAt))
+    }
   },
   async created() {
     EventBus.$on("filter-selected", (evt) => {
       this.selectedFilter = evt.filter;
-      
     });
     try {
       const { userId } = this.$route.params;
       this.user = await userService.getById(userId);
-      Promise.all(["promise1", "promise2"]);
       const postsPrm = this.user.postid.map((currPostId) =>
         postService.getById(currPostId)
       );
       this.posts = await Promise.all(postsPrm);
-      this.loading= false;
+      this.loading = false;
     } catch (err) {
       console.log("error while tryung to updated post: ", err);
       throw err;

@@ -242,61 +242,56 @@ textarea {
   border: transparent;
 }
 
-.delete-post1{
-  background: rgba(var(--d87,255,255,255),1);
-  border: 1px solid rgba(var(--f23,255,255,255),1);
-  box-shadow: 0 0 5px 1px rgba(var(--jb7,0,0,0),.0975);
+.delete-post1 {
+  background: rgba(var(--d87, 255, 255, 255), 1);
+  border: 1px solid rgba(var(--f23, 255, 255, 255), 1);
+  box-shadow: 0 0 5px 1px rgba(var(--jb7, 0, 0, 0), 0.0975);
   height: 14px;
   position: absolute;
-  transform: rotate(
-45deg
-);
+  transform: rotate(45deg);
   width: 14px;
   margin: 3px;
   margin-top: 9px;
   margin-left: 400px;
 }
 
-.delete-post{
-  box-shadow: 0 0 5px 1px rgba(var(--jb7,0,0,0),.0975);
-  background: rgba(var(--d87,255,255,255),1);
+.delete-post {
+  box-shadow: 0 0 5px 1px rgba(var(--jb7, 0, 0, 0), 0.0975);
+  background: rgba(var(--d87, 255, 255, 255), 1);
   position: absolute;
   align-items: center;
   font-family: "Lato", sans-serif;
   text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 2px;
-    padding: 10px;
-    margin-top: 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 2px;
+  padding: 10px;
+  margin-top: 16px;
   margin-left: 380px;
-    
 }
 
-.delete-post-d{
-  box-shadow: 0 0 5px 1px rgba(var(--jb7,0,0,0),.0975);
-  background: rgba(var(--d87,255,255,255),1);
+.delete-post-d {
+  box-shadow: 0 0 5px 1px rgba(var(--jb7, 0, 0, 0), 0.0975);
+  background: rgba(var(--d87, 255, 255, 255), 1);
   position: absolute;
   align-items: center;
   font-family: "Lato", sans-serif;
   text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 2px;
-    padding: 10px;
-    margin-top:14px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 2px;
+  padding: 10px;
+  margin-top: 14px;
   margin-left: 90px;
 }
 
-.delete-post1-d{
-  background: rgba(var(--d87,255,255,255),1);
-  border: 1px solid rgba(var(--f23,255,255,255),1);
-  box-shadow: 0 0 5px 1px rgba(var(--jb7,0,0,0),.0975);
+.delete-post1-d {
+  background: rgba(var(--d87, 255, 255, 255), 1);
+  border: 1px solid rgba(var(--f23, 255, 255, 255), 1);
+  box-shadow: 0 0 5px 1px rgba(var(--jb7, 0, 0, 0), 0.0975);
   height: 14px;
   position: absolute;
-  transform: rotate(
-45deg
-);
+  transform: rotate(45deg);
   width: 14px;
   margin: 3px;
   margin-top: 7px;
@@ -359,72 +354,65 @@ textarea {
     height: 90px;
     width: 90px;
     margin-right: 20px;
- 
   }
 
   .back-btn {
-   position:absolute;
+    position: absolute;
   }
 
-  .delete-post1{
-    background: rgba(var(--d87,255,255,255),1);
-    border: 1px solid rgba(var(--f23,255,255,255),1);
-    box-shadow: 0 0 5px 1px rgba(var(--jb7,0,0,0),.0975);
+  .delete-post1 {
+    background: rgba(var(--d87, 255, 255, 255), 1);
+    border: 1px solid rgba(var(--f23, 255, 255, 255), 1);
+    box-shadow: 0 0 5px 1px rgba(var(--jb7, 0, 0, 0), 0.0975);
     height: 14px;
     position: absolute;
-    transform: rotate(
-  45deg
-  );
+    transform: rotate(45deg);
     width: 14px;
     margin: 3px;
     margin-top: 9px;
     margin-left: 168px;
   }
-  
-  .delete-post{
-    box-shadow: 0 0 5px 1px rgba(var(--jb7,0,0,0),.0975);
-    background: rgba(var(--d87,255,255,255),1);
+
+  .delete-post {
+    box-shadow: 0 0 5px 1px rgba(var(--jb7, 0, 0, 0), 0.0975);
+    background: rgba(var(--d87, 255, 255, 255), 1);
     position: absolute;
     align-items: center;
     font-family: "Lato", sans-serif;
     text-decoration: none;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 2px;
-      padding: 10px;
-      margin-top: 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 10px;
+    margin-top: 16px;
     margin-left: 100px;
-      
   }
-  
-  .delete-post-d{
-    box-shadow: 0 0 5px 1px rgba(var(--jb7,0,0,0),.0975);
-    background: rgba(var(--d87,255,255,255),1);
+
+  .delete-post-d {
+    box-shadow: 0 0 5px 1px rgba(var(--jb7, 0, 0, 0), 0.0975);
+    background: rgba(var(--d87, 255, 255, 255), 1);
     position: absolute;
     align-items: center;
     font-family: "Lato", sans-serif;
     text-decoration: none;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 2px;
-      padding: 10px;
-      margin-top:14px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 10px;
+    margin-top: 14px;
     margin-left: 90px;
   }
-  
-  .delete-post1-d{
-    background: rgba(var(--d87,255,255,255),1);
-    border: 1px solid rgba(var(--f23,255,255,255),1);
-    box-shadow: 0 0 5px 1px rgba(var(--jb7,0,0,0),.0975);
+
+  .delete-post1-d {
+    background: rgba(var(--d87, 255, 255, 255), 1);
+    border: 1px solid rgba(var(--f23, 255, 255, 255), 1);
+    box-shadow: 0 0 5px 1px rgba(var(--jb7, 0, 0, 0), 0.0975);
     height: 14px;
     position: absolute;
-    transform: rotate(
-  45deg
-  );
+    transform: rotate(45deg);
     width: 14px;
     margin: 3px;
     margin-top: 7px;
     margin-left: 166px;
   }
-
 }

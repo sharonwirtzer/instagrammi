@@ -6,7 +6,6 @@
           <router-link class="my-username" :to="`/user/${post.byUser._id}`">{{post.byUser.username}} </router-link> 
       <br />   <span class="loc">{{ post.loc }}</span>
       </div>
-     
      <div>
         <div v-if="!isHidden" class="delete-post1"></div>
         <h1 v-if="!isHidden" class="delete-post" @click="emitDeletePost">
@@ -23,7 +22,7 @@
     </div>
 
     <img :src="post.postImgUrl" class="post-img-url" @dblclick="like" />
-
+ 
     <div v-show="isShow">Hold tight, we're working on it! </div>
 
 <div class="image-container">
@@ -45,7 +44,7 @@
         />
 
         <img
-        @click="isShow = !isShow"
+        @click="isShow = !isShow" 
           class="post-actions"
           :src="require('@/assets/img/sent.png')"
           height="30"
@@ -100,17 +99,13 @@ export default {
   },
   data() {
     return {
+      isShow:false,
       myDate: null,
-
       comment: "",
-
       isHidden: true,
-
-      isShow: false,
     };
   },
-
-  methods: {
+  methods: { 
     moment,
     clearTextarea() {
       this.$refs.emoji.clear();
@@ -144,6 +139,9 @@ export default {
 
     },
   },
+   mounted () {
+      this.callFunction()
+    },
   computed: {
     currLikeImg() {
       const srcs = [

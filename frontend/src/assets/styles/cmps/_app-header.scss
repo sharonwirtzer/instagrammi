@@ -19,27 +19,10 @@ header {
     width: 100%;
     z-index: 2;
 
-
-    .header-icon{
+    .header-icon {
         flex-direction: row;
         padding-left: 24px;
         white-space: nowrap;
-        
-    }
-  
-
-    .loggedin-user {
-        background-color: $clr1;
-        padding: 2px 8px;
-        border-radius: 1em;
-        align-self: flex-end;
-        color: whitesmoke;
-        span {
-            background-color: $clr2;
-            padding: 4px;
-            margin: 10px;
-            border-radius: 50%;
-        }
     }
 
     .logo {
@@ -96,11 +79,10 @@ header {
         display: none;
     }
 
-    .header-icon{
+    .header-icon {
         flex-direction: row;
         padding-left: 24px;
         white-space: nowrap;
         justify-content: center;
     }
-
 }
